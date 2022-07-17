@@ -1,0 +1,34 @@
+<%- include("includes/header") %>
+
+<div class="container">
+	<% if (isLoggedIn) { %>
+
+	<form action="/add-post" method="POST">
+		<div class="form-group">
+			<label>Title</label>
+			<input class="form-control" name="title" placeholder="Title" />
+		</div>
+		<div class="form-group">
+			<label>Body</label>
+			<input class="form-control" name="content" placeholder="Body" />
+		</div>
+		<div class="form-group">
+			<label>Image</label>
+			<input class="form-control" name="image" placeholder="Image" />
+		</div>
+
+		<div class="form-group">
+			<label>Location</label>
+			<input
+				class="form-control"
+				name="location"
+				placeholder="Location"
+			/>
+		</div>
+
+		<button type="submit" class="btn btn-success">Add post</button>
+	</form>
+	<% } %>
+</div>
+
+<%- include("includes/footer") %>

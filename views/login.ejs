@@ -1,0 +1,20 @@
+<%- include("includes/header") %>
+		<div class="container">
+		<% if (!isLoggedIn) { %>
+			<h2>Login</h2>
+
+			<form action="/login" method="POST">
+				<div class="form-group">
+					<label>Email</label>
+					<input type="email" class="form-control" name="email" value="test@mail.com" />
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control" name="password" value="" />
+				</div>
+				<button class="btn btn-success" type="submit">Login</button>
+			</form>
+		<% } %>
+		</div>
+	</body>
+</html>

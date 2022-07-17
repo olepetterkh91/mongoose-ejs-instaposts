@@ -1,0 +1,10 @@
+<%- include("includes/header") %>
+
+<div class="container">
+	<h2>Posts</h2>
+	<% posts.map(post => { %>
+	<p><%= post.title %></p>
+	<% }) %>
+</div>
+
+<%- include("includes/footer") %>
